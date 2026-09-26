@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Mark</title>
+    <style>
+        table,tr,th,td{
+            border: 2px solid yellow;
+            border-collapse: collapse;
+        }
+      
+    </style>
+</head>
+<body >
+    
+    <table   >
+        <caption>Student information</caption>
+        <colgroup>
+            <col  span="1 span" style="background-color: rgb(120, 120, 165);">
+            <col  style="background-color: bisque;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th colspan="2 span">table 1</th>
+            </tr>
+         <tr style="background-color: cadetblue;" >
+            <th>Name</th>
+            <th>Reg no</th>
+            <th>Subject name</th>
+            <th>Mark</th>
+            <th>Grade</th>
+            
+         </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3 span">Anand v</td>
+                <td>4004</td>
+                <td>Math</td>
+                <td>80</td>
+                <td>A</td>
+            </tr>
+            <tr>
+               
+                <td>4004</td>
+                <td>english</td>
+                <td>70</td>
+                <td>B</td>
+            </tr>
+            <tr>
+              
+              <td>4004</td>
+              <td>tamil</td>
+              <td>80</td>
+              <td>A</td>
+            </tr>
+<tr>
+    <td colspan="3 span" style="text-align: right;">Student total mark:</td>
+    <td colspan="2 span">230</td>
+</tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5 span">&copy;2026 student  record</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

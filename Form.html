@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <style>
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div >
+    <table border="0">
+    <form  autocomplete="off"  action="success\Success.html" method="get" target="_blank">
+        <tr>
+            <td  colspan="2">
+
+                <h4 style="text-align: center;">Student Form</h4>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="name">Student name</label></td>
+            <td> <input id="name" name="name" type="text" placeholder="Enter your name"   required></td>
+
+        </tr>
+        <tr>
+            <td><label for="age">Age Date</label></td>
+            <td><input id="age" name="age" placeholder="Enter your age" min="21"  max="28" value="21" type="number" readonly><input type="date" min="2026-07-01" value="2026-07-01" max="2026-08-12"/></td>
+        </tr>
+    <tr>
+
+        <td><label for="gender">Gender</label></td>
+        <td>
+            <select  id="gender" name="Gender">
+                <option value="-">Select option</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+
+        </select>
+    </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Education</label>
+        </td>
+        <td>
+            <select name="course">
+                <optgroup label="12 std">
+<option value="1">1nd year</option>
+
+                </optgroup>
+                <optgroup label=" diploma">
+                    <option value="2">2nd year</option>
+
+                </optgroup>
+            </select>
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            <label>MODE OF Education</label>
+        </td>
+        <td>
+            <input type="radio" name="mode" value="online" >
+            <span>online</span>
+            <input type="radio" name="mode" value="offline" checked>
+            <span>offline</span>
+        </td>
+    </tr>
+    <tr>
+        <td><label>course:</label></td>
+        <td><input type="checkbox" name="course" value ="cse">
+            <span>cse</span>
+            <input type="checkbox" name="course" value="ece">
+            <span>ece</span>
+            <input type="checkbox" name="course" value="mech" checked>
+            <span>mech</span>
+        </td>
+    </tr>
+    <tr>
+        
+       <td><label>color:</label></td>
+       <td>
+        <input name="color" type="color"/>
+       </td>
+        
+        
+    </tr>
+    <tr>
+        <td>
+            <label>Time</label>
+        </td>
+        <td><input name="time" type="time" min="09:00" max="12:00" value="09:00"/></td>
+    </tr>
+    <tr>
+        <td><label>feedback</label></td>
+        <td><textarea name="feedback" placeholder="enter your feedback" rows="10" cols="20" minlength="10" maxlength="15" ></textarea></td>
+    </tr>
+     <tr>
+    <td>
+       <label>Clg rate</label> 
+    </td>
+    <td>
+        <input name="clg" type="range" max="10" min="1"  value="10" oninput="this.nextElementSibling.value=this.value"><output>10</output><br><br>
+ 
+    </td>
+  </tr>
+  <tr>
+    <td>image:</td>
+   <td> <input type="file" accept=".jpg"/></td>
+ </tr>
+ <tr>
+    <td>url:</td>
+    <td>
+        <input type="url"  placeholder="Enter your url" >
+        <input type="date" value="2026-09-19"  readonly />
+    </td>
+ </tr>
+    <tr>
+        <td colspan="2 span" >
+            <button type="submit" style="margin-left: 43%;"  >Submit</button>
+            <button type="reset">reset</button>
+            
+        </td>
+    </tr>
+ 
+
+    </form>
+
+    </table>
+    </div>
+
+    <div>
+        <figure>
+            <img src="mobile.jpg" alt="mobile"  width="300px"/>
+            <figcaption>
+                mobile into:1
+            </figcaption>
+            
+        </figure>
+    </div>
+</body>
+</html>
