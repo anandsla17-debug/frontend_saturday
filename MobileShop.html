@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping web page</title>
     <link rel="icon" href="mobile.jpg"  type="image/jpg"/>
+    <style>
+
+        /* article,h4,li{
+            background-color: blueviolet;
+            border: 2px solid;
+        } */
+h4+ol{
+    background-color:burlywood;
+}
+h4+ul{
+    background-color: blueviolet;
+}
+
+footer+p{
+    font-size: 20px;
+}
+footer p{
+    border: 2px solid sandybrown;
+}
+    </style>
 </head>
 <body>
     <header>
@@ -52,7 +72,7 @@
         </section>
         <section id="review">
             <h3>Product Review</h3>
-            <article><!-- blog paper news review rate-->
+            <article id="feedback"><!-- blog paper news review rate-->
                 <h4>customer 1 feedback</h4>
 <ul type="square"> <!-- square circle desc-->
     <li>super product</li>
@@ -76,11 +96,15 @@
         
     </main>
     <footer style="text-align: center;" id="footer">
-        <p>gmail:av5234646@gmail.com</p>
+        
+       <p>gmail:av5234646@gmail.com</p>
         <p>phone no:6383768376</p>
         <address>address:123,first street,chennai-890888</address>
+        <div>
         <p>abc mobile shop pvt&copy;2026</p>
-    </footer>
+        </div>
     
+    </footer>
+     
 </body>
 </html>

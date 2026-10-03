@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector css</title>
+    <style>
+
+        p,h1{
+            background-color: lightblue;
+        }
+        .main{
+            color: brown;
+        }
+        #textsize,h1{
+            font-size: 50px;
+        }
+        #textcenter{
+            text-align: center;
+        }
+
+
+        /* child selector  parent => direct */
+    div>h2{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(173, 121, 18);
+    }
+    /* descendant selector  parent => all */
+    div h2{
+        background-color: blue;
+    }
+     
+    /* adjcent sibiling selector + */
+
+    h3+h4{
+        border:2px solid yellowgreen;
+    }
+/* 
+    general sibiling selector ~ */
+    h3~h4{
+        font-weight: lighter;
+
+        background-color: rgb(37, 37, 168)
+    }
+    /* universal selector */
+*{
+    background-color: blanchedalmond;
+    margin: 20px;
+    
+}
+/* input[type="text"]{
+    color: brown;
+} */
+
+#fname{
+    color: blue;
+}
+#lname{
+    color:rgb(95, 95, 72)
+}
+input[type="password"]{
+    color: green;
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <p id="textsize">main 0</p>
+    <p class="main">main 1</p>
+    <p> main 2</p>
+    <p id="textcenter">main 3</p>
+    <h1 class="main">css tag</h1>
+
+
+    <div>
+        <h2>child main</h2>
+        <section>
+            <h2>sub chain main</h2>
+        </section>
+    </div>
+
+
+    <h3>type Sibiling</h3>
+<!-- <span>....</span> -->
+    <h4>adjcent sibiling </h4>
+    <h4>general sibiling</h4>
+    <form>
+        <input type="text" id="fname"  placeholder="Enter your username">
+        <input type="text" id="lname" placeholder="Enter your lastname">
+        <br>
+        <input  type="password" placeholder="Enter your password">
+        <br>
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>
