@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid area</title>
+    <style>
+        p{
+            background-color: aquamarine;
+        }
+        .grid-templete-areas{
+            display: grid;
+            border: 2px solid black;
+            grid-template-areas: "a1 a2 a3"
+                                   "a4 a5 a6"
+                                   "a7 a8 a9"
+                                   "a10 a10 a10";
+        }
+        .b11{
+grid-area: a10;
+        }
+        .b22{
+grid-area: a9;
+        }
+        .b33{
+grid-area: a3;
+        }
+        .b44{
+grid-area: a4;
+        }
+        .b55{
+grid-area: a5;
+        }
+        .b66{
+grid-area: a2;
+        }
+        .b77{
+grid-area: a6;
+        }
+        .b88{
+grid-area:a7 ;
+        }
+        .b99{
+grid-area:a8;
+        }
+        .b100{
+grid-area: a1;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-templete-areas">
+    <p class="b11">1</p>
+    <p class="b22">2</p>
+    <p class="b33">3</p>
+    <p class="b44">4</p>
+    <p class="b55">5</p>
+    <p class="b66">6</p>
+    <p class="b77">7</p>
+    <p class="b88">8</p>
+    <p class="b99">9</p>
+    <p class="b100">10</p>
+    </div> 
+</body>
+</html>
