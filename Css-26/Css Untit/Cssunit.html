@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css unit</title>
+    <style>
+        .px{
+background-color: blue;
+width: 50px;
+height: 50px;
+        }
+.percentage{
+
+    background-color: blueviolet;
+    width: 50%;
+   
+}
+.inch{
+    background-color: burlywood;
+    height: 1in;
+    width: 1in;
+}
+.cm{
+    background-color: antiquewhite;
+    width: 1cm;
+    height: 1cm;
+}
+.mm{
+    background-color: brown;
+    width: 3mm;
+}
+.pt{
+    background-color: cadetblue;
+    height: 13pt;
+    width: 10pt;
+}
+.rem{
+    height: 2rem;
+    width: 2rem;
+    background-color: red;
+}
+
+.parent{
+    font-size: 8px;
+}
+.child{
+    font-size: 3em;
+}
+.whvh{
+    background-color: beige;
+    width: 50vw;
+    height: 25vh;
+}
+    </style>
+</head>
+<body>
+    <p>Absolute Units</p>
+    <p class="px">px</p>
+    <p class="inch">inch</p>
+    <p class="cm">cm</p>
+    <p class="mm">mm</p>
+    <p class="pt">pt</p>
+
+    <p>Relative units</p>
+
+    <p class="percentage">percentage</p>
+    
+    <p class="rem">heading</p>
+    <div class="parent">
+        <p class="child">child element</p>
+    </div>
+    <p class="whvh">wh vh</p>
+</body>
+</html>
