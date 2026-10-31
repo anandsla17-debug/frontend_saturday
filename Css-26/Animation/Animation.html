@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+.box{
+    background-color: lightblue;
+    padding: 3px;
+    font-size: larger;
+    width: 100px;
+    height: 100px;
+    animation-name: box-animation;
+    animation-duration: 10s;
+    text-align: center;
+    align-content: center;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    animation-delay: 3s;
+    animation-play-state: running;
+    animation-direction: normal;
+   
+}
+
+@keyframes box-animation{
+    
+    30%{
+
+        background-color: cadetblue;
+       
+    }
+    60%{
+        background-color: chartreuse;
+        margin-left: 500px;
+        
+    }
+90%{
+    margin-top: 500px;
+    background-color: brown;
+}
+100%{
+    border-radius: 50px;
+}
+}
+
+    </style>
+</head>
+<body>
+    <p class="box">box</p>
+</body>
+</html>

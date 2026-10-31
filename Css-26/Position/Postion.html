@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>postion</title>
+</head>
+<style>
+    .flex{
+        display: flex;
+        flex-direction: column;
+      align-items: center;
+    }
+.laptop{
+    font-size: 32px;
+    position: relative;
+    bottom: 400px;
+}
+.hi{
+    font-family: fantasy;
+    position: relative;
+    bottom: 488px;
+    right: 117px;
+    
+}
+.icons{
+    position: relative;
+    bottom: 400px;
+    right: 100px;
+    z-index:2 ;
+}
+.photo{
+    position: relative;
+    bottom: 560px;
+    right:50px;
+    z-index: 1;
+}
+.parent{
+    background-color:bisque;
+    width: 100%; 
+    height: 400px;
+    position: relative;
+    bottom: 400px;
+}
+.child{
+    position: absolute;
+  left: 200px;
+}
+.html{
+    position: absolute;
+    left: 230px;
+    top:30px;
+}
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+   
+    z-index: 3;
+  
+
+}
+.nav p{
+    background-color: aqua;
+    padding: 5px;
+   
+}
+body{
+    margin: 0;
+}
+.stickly{
+   position: sticky;
+  /* top:200px; */
+   z-index: 2;
+}
+</style>
+<body>
+    <div class="nav">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10</p>
+    </div>
+     <p class="stickly">welcome</p>
+    <div class="flex">
+    <img  src="img/laptop.png" width="500px" alt="laptop">
+    <p class="laptop">XYZ Laptop</p>
+    <img class="icons" src="img/icon.jpg" width="100px" alt="icons">
+    <p class="hi">hi</p>
+    <img class="photo" src="img/photo.jpg" width="80px">
+    </div>
+     
+    <div class="parent">
+<img class="child" src="img/html.jpg" width="100px" >
+<p class="html">html</p>
+    </div>
+  
+</body>
+</html>
