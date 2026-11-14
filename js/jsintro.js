@@ -19,12 +19,25 @@ console.log("hello");
     logic();// call
 
 
+    // do not redeclare , reassign
     let salary=50000;
-   
+  
     salary=10000;//
-    console.log(salary);
+    console.log(typeof salary);
 
+    function letlogic(){
+        console.log("let concept")
+        {
+          let amount=300;  
+            console.log(amount);
+        }
+      
+    }
+letlogic();
+
+// do not  redeclare ,do not reassign
     const pin=1235;
+    // pin=23;
     
     console.log(pin);
     
