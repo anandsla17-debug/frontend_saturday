@@ -24,9 +24,13 @@ let no=57;
         }
 
         // 100 to 81=>o,80 to71=>a, 70 to 61=>b,60 to 45 =>c
-        let usermark=40;
+        let usermark=90;
         if(usermark<=100 && usermark>=81){
+
             console.log("pass","O",usermark)
+            if(usermark%10==0){
+                console.log("rounded mark")
+            }
         } else if(usermark<=80 && usermark>=71){
             console.log("pass","A",usermark);
         }else if(usermark<=70 && usermark>=61){
@@ -39,6 +43,34 @@ let no=57;
         else{
             console.log("invaild number");
         }
+
+        //calculator =>add 1 ,sub 2 ,multi 3,div 4
+       let first=Number (prompt("Enter your first number"));
+       let second=Number(prompt("Enter your Second number"));
+       let option=Number(prompt("Enter your option")); //
+
+        switch(option){
+            case 1:
+                console.log("add:"+(first+second));
+                break;
+                case 2:
+                    console.log("sub:"+(first-second));
+                break;
+                case 3:
+                    console.log("multi:"+first*second);
+                    break;
+                    case 4:
+                        console.log("div:"+first/second);
+                        break;
+
+                    default:
+                        console.log("incorrect option")    
+
+
+        }
+
+
+
 
     </script>
 </head>
