@@ -80,7 +80,26 @@ console.log("data:"+data);//statement
 for(let y in objects){
   console.log(y,objects[y]);
 }
-// hello word => vovel
+// hello word => vovel  a e i o u
+// for => 
+//a.charAt(i)=="a" ||
+//count+=1;
+
+let letter="hello world";
+console.log(letter.length)
+console.log(letter.charAt(0));
+let count =0;
+let notvowel=0;
+for(i=0;i<letter.length;i++){
+
+      if(letter.charAt(i)=="a"|| letter.charAt(i)=="e"||letter.charAt(i)=="o"||letter.charAt(i)=="i"|| letter.charAt(i)=="u"){
+        count+=1;
+      }else{
+notvowel+=1;
+      }
+
+}
+console.log(count ,notvowel);
     </script>
 </head>
 <body>
