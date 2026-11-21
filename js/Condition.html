@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condition</title>
+
+    <script>
+        //even and odd=>if else
+let no=57;
+        if(no%2==0){
+            console.log("even",no);
+        }else{
+            console.log("odd",no)
+        }
+
+        //mark => 45 100 =>pass and else fail
+        let mark=100;
+        if(mark>=45 && mark<=100) {
+            console.log(mark,"pass");
+        }
+        else{
+            console.log(mark,"fail");
+        }
+
+        // 100 to 81=>o,80 to71=>a, 70 to 61=>b,60 to 45 =>c
+        let usermark=40;
+        if(usermark<=100 && usermark>=81){
+            console.log("pass","O",usermark)
+        } else if(usermark<=80 && usermark>=71){
+            console.log("pass","A",usermark);
+        }else if(usermark<=70 && usermark>=61){
+            console.log("pass","B",usermark)
+        }else if(usermark<=60 && usermark>=45){
+          console.log("pass","C",usermark)
+        }else if(usermark<=44 && usermark>=0){
+            console.log("fail","F",usermark)
+        }
+        else{
+            console.log("invaild number");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
