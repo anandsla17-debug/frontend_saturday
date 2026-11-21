@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+    <script>
+        for(let i=0;i<10;i++){
+
+            if(i%2==0){
+            console.log("even",i);
+            }
+            else{
+                console.log("odd",i);
+            }
+        }
+
+        for(let i=10;i>=0;i--){
+            if(i==4){
+                break;// loop stop
+            }
+            if(i==7){
+                continue;// 7 remove move next step
+            }
+            console.log("decrement:"+i)
+        }
+
+
+        let value=0;
+        while(value<=10){
+if(value==6){
+    break;
+}
+ if(value==3){
+    value++;
+   continue;
+   
+}
+            console.log("while",value);
+
+            value++;
+
+        }
+
+        let data=0;
+        while(data!=0){
+            console.log("data while:"+0)
+
+        }
+        do{
+console.log("data:"+data);//statement
+        }while(data!=0);//condition
+
+        let term=0;
+
+        do{
+
+
+
+          console.log("do:"+term);  
+            term++;
+
+        }while(term<20);
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
